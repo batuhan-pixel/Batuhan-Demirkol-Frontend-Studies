@@ -1,0 +1,35 @@
+.bgImage{
+    background-image: url("https://img.freepik.com/free-photo/futuristic-metaverse-empty-room-product-display-presentation-abstract-technology-scifi-with-neon-light-3d-background_56104-2314.jpg?semt=ais_hybrid&w=740&q=80");
+    width: 1000px;
+    height: 600px;
+    color: whitesmoke;
+    padding: 20px;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+.title{
+    font-size: 30px;
+}
+
+.paragraf{
+    font-size: 20px;
+}
+
+/* media query - Responsive Design */
+@media screen and (max-width: 768px){
+    .title{
+        font-size: 16px;
+    }
+    .paragraf{
+        font-size: 12px;
+    }
+    .bgImage{
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+        color: burlywood;
+    }
+}

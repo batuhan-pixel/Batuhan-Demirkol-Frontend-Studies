@@ -1,0 +1,20 @@
+.list-item{
+    font-size: 18px;
+    color: chartreuse;
+}
+#menu{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+        
+.paragraf{
+    font-size: 16px;
+    color: blue;
+}
+#paragraf2{
+    color: red;
+    font-weight: bold;
+}
