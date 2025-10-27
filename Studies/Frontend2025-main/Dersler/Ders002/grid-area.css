@@ -1,0 +1,50 @@
+/* 
+   .container: Bu sınıf, içindeki elementleri grid sistemi ile düzenlemek için kullanılır 
+*/
+.container {
+    /* display: grid - Bu özellik, container içindeki elementleri ızgara (grid) sisteminde düzenlememizi sağlar.
+       Yani içerideki elementleri satır ve sütunlar halinde yerleştirebiliriz */
+    display: grid;
+    
+    /* height: 600px - Container'ın yüksekliğini 600 piksel olarak ayarlar.
+       Yani grid sistemimizin toplam dikey boyutu 600 piksel olacak */
+    height: 600px;
+    background-color: lightgray;
+    /* gap: 10px - Grid hücreleri arasındaki boşluğu ayarlar.
+       Yani her bir grid öğesi arasında 10 piksellik bir boşluk bırakır.
+       Bu özellik hem yatay hem dikey boşlukları aynı anda ayarlar */
+    gap: 10px;
+    grid-template-areas: 
+        "header header header"
+        "menu content content"
+        "menu . ."
+        "box1 box1 box1";
+}
+
+header{
+    background-color: red;
+    /* grid-area: header - Bu özellik, header elementinin grid içindeki konumunu belirler.
+       Yani header elementinin grid alanında "header" olarak tanımlanan bölgeye yerleştirileceğini belirtir */
+    grid-area: header;
+}
+
+section{
+    background-color: blue;
+    /* grid-area: content - Bu özellik, section elementinin grid içindeki konumunu belirler.
+       Yani section elementinin grid alanında "content" olarak tanımlanan bölgeye yerleştirileceğini belirtir */
+    grid-area: content;
+}
+
+aside{
+    background-color: green;
+    /* grid-area: menu - Bu özellik, aside elementinin grid içindeki konumunu belirler.
+       Yani aside elementinin grid alanında "menu" olarak tanımlanan bölgeye yerleştirileceğini belirtir */
+    grid-area: menu;
+}
+
+.box-1{
+    background-color: yellow;
+    /* grid-area: box1 - Bu özellik, box-1 elementinin grid içindeki konumunu belirler.
+       Yani box-1 elementinin grid alanında "box1" olarak tanımlanan bölgeye yerleştirileceğini belirtir */
+    grid-area: box1;
+}
